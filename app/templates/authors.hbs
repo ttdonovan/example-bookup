@@ -1,0 +1,9 @@
+<h1>Authors</h1>
+
+<ul>
+  {{#each model as |author|}}
+    <li>{{#link-to "authors.author" author.id}}{{author.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

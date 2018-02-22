@@ -1,0 +1,15 @@
+<h1>{{model.name}}</h1>
+
+<ul>
+  {{#each model.books as |book|}}
+    <li>
+      {{book.title}}
+
+      <ul>
+        {{#each book.chapters as |chapter|}}
+          <li>{{chapter.title}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>
